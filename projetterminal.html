@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+        <title>Commande de terminal</title>
+        <link rel="stylesheet" href="style.css" />
+        <meta charset="utf-8">
+</head>
+
+<body>
+  
+  <h1><strong>[root@localhost ~]#Commande de terminal</strong></h1>
+<br><br>
+
+    <div>
+    <p>[root@localhost Commande de terminal]#<br><br>
+    En informatique, un terminal est une variété de périphérique réseau placé à l'extrémité d'un nœud. Le terminal est un point d’accès de communication entre l'homme, la machine, ou un réseau de machine. Dans un réseau décentralisé de type client-serveur il correspond aujourd'hui à l'association minimale d'un périphérique de saisie (clavier) ou de pointage (souris) et d'un moniteur reliés à l'unité centrale. Sous Unix et en génie logiciel, il désigne par abus de langage une fenêtre d'invite de commande contenant un shell Unix.
+    </p>
+    </div>
+    <br>
+
+
+<h2><span>[root@localhost ~]# le Manuel (terminal mode)<o:p></o:p></span></h2>
+    <p>[root@localhost ~]# le Manuel (terminal mode) /man<br><br>
+    La commande man est employée pour vous montrer le manuel des autres commandes. (man = manuel) Pour obtenir une bonne compréhension,
+     Pour quitter man, appuyez sur la touche q
+    <br>
+    Certains utilitaires sont mieux documentés en tant que texte info. par exemple essayez <br><br>
+    [root@localhost ~]# info man <br>
+    On peut également avoir une aide rapide sur la plupart des commandes par l'option –help (ou parfois -h) <br><br>
+    [root@localhost ~]# man --help<br><br>
+    [root@localhost ~]# man -h<br>
+    ..<br><br><br> 
+</p>
+
+<h2><span>[root@localhost ~]# Commande ls<o:p></o:p></span></h2>
+<p>[root@localhost ~]# Commande ls / ls<br><br>
+La commande ls liste les fichiers et les sous-dossiers. (ls = list)<br>
+[root@localhost ~]# ls <br><br>
+Pour obtenir plus d'information, utilisez l'option -l (pour version longue) : <br><br>
+[root@localhost ~]# ls -l <br><br>
+Pour afficher aussi les fichiers "cachés" (en fait ceux qui commencent par un point) utilisez l'option -A (pour All) : <br><br>
+[root@localhost ~]# ls -A <br>
+..<br><br><br>
+</p>
+
+<h2><span>[root@localhost ~]# Commande cd<o:p></o:p></span></h2>
+<p>[root@localhost ~]# Commande cd / cd<br><br>
+ La commande cd vous permettra de changer de répertoire (cd = change directory). Quand vous ouvrez un terminal en mode utilisateur vous serez dans votre répertoire local (/home/utilisateur).
+Dans un système linux la référence au fichier s'appelle un chemin. Dans un chemin le nom des répertoires et des fichiers sont séparés par un "/". Il existe deux types de chemin : absolu et relatif.<br><br>
+[root@localhost ~]# cd /home/utilisateur/dossier <br><br>
+Le symbole "~" peut remplacer le chemin absolu vers votre répertoire personnel soit "/home/utilisateur/". <br><br>
+[root@localhost ~]# cd ~/Desktop<br>
+..<br><br><br> 
+</p>
+<h2><span>[root@localhost ~]#  Commande id<o:p></o:p></span></h2>
+<p>[root@localhost ~]# Commande id / id<br><br>
+La commande id affiche les informations utilisateur et de groupe pour un utilisateur spécifié, ou si aucun utilisateur n'est spécifié, elle affiche les informations sur l'utilisateur courant <br><br>
+[root@localhost ~]# id ubuntu-user<br>
+..<br><br><br> 
+</p>
+<h2><span>[root@localhost ~]# Commande mkdir<o:p></o:p></span></h2>
+<p>[root@localhost ~]# Commande mkdir / mkdir<br><br>
+La commande mkdir vous permettra de créer des répertoires. (mkdir = make directory) Exemple : <br><br>
+[root@localhost ~]# mkdir musique<br>
+..<br><br><br> 
+</p>
+<h2><span>[root@localhost ~]# Commande pwd<o:p></o:p></span></h2>
+<p>[root@localhost ~]# Commande pwd / pwd <br><br>
+La commande pwd vous permettra de savoir dans quel répertoire de l'arborescence
+vous êtes localisé. (pwd = present working directory) Exemple : <br><br>
+[root@localhost ~]# pwd<br>
+..<br><br><br> 
+</p>
+
+<h2><span>[root@localhost ~]# Commande less<o:p></o:p></span></h2>
+<p>[root@localhost ~]# Commande less / less <br><br>
+ La commande less permet d'afficher le contenu d'un fichier directement dans le terminal. Exemple : <br><br>
+[root@localhost ~]# less /etc/apt/sources.list
+..<br><br><br> 
+</p>
+
+<h2><span>[root@localhost ~]# Commande rm<o:p></o:p></span></h2>
+<p>[root@localhost ~]# Commande rm / rm <br><br><br>
+ La commande rm permet de supprimer un fichier ou répertoire. (rm = remove)  Exemple : <br><br>
+[root@localhost ~]# rm nom_fichier <br>
+..<br><br><br> 
+</p>
+
+<h2><span>[root@localhost ~]# Commande chown<o:p></o:p></span></h2>
+<p>[root@localhost ~]# Commande chown / chown <br><br>
+ La commande chown permet de changer le propriétaire d'un fichier ou répertoire (chown = change owner). Seul le propriétaire du fichier (ou root) peut faire cette manipulation.   Exemple : <br><br>
+[root@localhost ~]# chown utilisateur2 /home/utilisateur/doc.tx <br>
+..<br><br><br> 
+</p>
+
+<h2><span>[root@localhost ~]# Commande apt-get<o:p></o:p></span></h2>
+<p>[root@localhost ~]# Commande apt-get / apt-get <br><br>
+ La commande apt-get permet de gérer les paquets Debian de votre Ubuntu. Exemple :  <br><br>
+[root@localhost ~]# sudo apt-get update<br><br>
+permet de mettre à jour la liste des paquets disponibles, commande à taper en premier avant toute installation pour être sûr d'avoir les mises à jour.<br>
+[root@localhost ~]# sudo apt-get upgrade<br><br>
+permet de mettre à jour les paquets déjà installés, à taper pour faire les mises à jour de sécurité.<br><br>
+[root@localhost ~]# sudo apt-get install soft<br><br>
+Installera le logiciel "soft" en gérant les dépendances, donc "apt" vous 
+demandera peut être d'installer d'autres paquets en complément.<br><br>
+[root@localhost ~]# sudo apt-get remove soft <br><br>
+désinstallera le paquet "soft".<br><br>
+[root@localhost ~]# sudo apt-get autoremove soft<br><br>
+désinstallera "proprement" le paquet "soft" ainsi que ses dépendances<br>
+..<br><br><br> 
+</p>
+
+<p>[root@localhost ~]# close terminal<br>
+.
+</p>
+
+</body>
+
+
+</html>
